@@ -22,10 +22,12 @@ const Feed = () => {
       <input placeholder="What's happening?"></input>
       <hr/>
       {postList.map((post, index) =>
-        <Post names={post.name}
-          post={post.content}
+        <Post names={post.names}
+          content={post.content}
           key={index}/>
       )}
     </>
   );
 }
+
+export default Feed;
